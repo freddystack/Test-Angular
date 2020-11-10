@@ -15,9 +15,9 @@ ng g c components/about --skipTests
 ng g s services/api --skipTests
 ng g p pipes/filter--skipTests
 
-## Build
+## HttpClient
+Creamos una variable privada solo de lectura para almacenar el endpoint de las apis, y mandamos las funciones de tipo Observable para poder ser utilizadas por los componentes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
