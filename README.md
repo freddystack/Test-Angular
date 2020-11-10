@@ -27,6 +27,6 @@ Utilizamos el .filter en la lista de Jobs para pode acceder solamente a los elem
 
 Para este caso creamos una funcion que nos mande el id del usuario como parametro luego solo recorremos la lista de usuarios y obteniendo el id que coincida con el parametro que nos trajo la funcion de esta manera solo se lo pasamos al doble enlace de datos que tienen los imputs del modal
 
-## Further help
+## Filtrar nombre del usuario
+Utilizamos un pipe esto se lo pasamos al ngFor que recorre la lista de usuarios de esta manera podemos acceder a su informacion para poder ser filtrada. En el pipe solo obtenemos el valor que se paso en el input de busqueda que tambien tiene doble enlace de datos, creamos un array vacio recorremos el valor que nos pasa el imput se lo empujamos al array vacion y los retornamos.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
