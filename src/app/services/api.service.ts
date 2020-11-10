@@ -20,15 +20,5 @@ export class ApiService {
   getPeoples():Observable<any>{
     return this.http.get(`${this.URLPEOPLE}`)
   }
-  getDataUaer(user: any){
 
-
-    
-     const data ={
-       name: user.name,
-       country : user.country
-
-     }
-     return this.http.get(`${this.URLPEOPLE}`)
-  }
 }
