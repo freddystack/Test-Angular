@@ -4,11 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Comando para correr el proyecto
 
-Correr `ng serve -o` 
+Run `ng serve -o` 
 
-## Code scaffolding
+## Comandos utilizados en la consola
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ng g c components/aside --skipTests
+ng g c components/jobs --skipTests
+ng g c components/people --skipTests
+ng g c components/about --skipTests
+ng g s services/api --skipTests
+ng g p pipes/filter--skipTests
 
 ## Build
 
