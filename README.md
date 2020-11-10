@@ -15,17 +15,17 @@ ng g c components/about --skipTests
 ng g s services/api --skipTests
 ng g p pipes/filter--skipTests
 
-## HttpClient
+## HttpClient / Servicios
 Creamos una variable privada solo de lectura para almacenar el endpoint de las apis, y mandamos las funciones de tipo Observable para poder ser utilizadas por los componentes
 
 
-## Running unit tests
+## Filtrar solo 10 elemento de la api de Jobs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Utilizamos el .filter en la lista de Jobs para pode acceder solamente a los elementos solicitados
 
-## Running end-to-end tests
+## Mostrar detalle del usuario
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Para este caso creamos una funcion que nos mande el id del usuario como parametro luego solo recorremos la lista de usuarios y obteniendo el id que coincida con el parametro que nos trajo la funcion de esta manera solo se lo pasamos al doble enlace de datos que tienen los imputs del modal
 
 ## Further help
 
