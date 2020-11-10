@@ -1,0 +1,65 @@
+<div class="container-fluid animate__animated animate__fadeInLeft  animate__faster	500ms">
+    <div class="row mb-4">
+        <input type="text"
+         name="fill" 
+         class="form-control" 
+         placeholder="Search user by name" 
+         aria-describedby="addon-wrapping"
+         [(ngModel)]="fill">
+    </div>
+    <div class="row">
+      <cdk-virtual-scroll-viewport itemSize="60" class="scroll">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Contry</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of listPeoples | filter:fill ">
+                  <td>{{ i.name }}</td>
+                  <td>{{ i.country }}</td>
+                  <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" (click)="details(i.id)" >View</button>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </cdk-virtual-scroll-viewport>
+    </div>
+</div>
+
+
+  <!-- MODAL -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="recipient-name" name="name" [(ngModel)]="user.name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Contry:</label>
+            <input type="text" class="form-control" id="recipient-country" name="country" [(ngModel)]="user.country">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

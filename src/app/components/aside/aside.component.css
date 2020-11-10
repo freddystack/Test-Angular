@@ -1,0 +1,11 @@
+aside{
+    width: 20%;
+    height: 110vh;
+    border: 1px solid black;
+    z-index: 1000;
+    background-color: rgb(209, 209, 214);
+}
+.render{
+    margin: 30px;
+    width: 100%;
+}

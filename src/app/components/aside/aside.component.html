@@ -1,0 +1,12 @@
+<div class="d-flex flex-row">
+    <aside>
+        <div class="d-flex flex-column mt-5 ml-2 mr-2">
+         <button type="button" class="btn btn-primary mb-1" routerLinkActive="active" [routerLink]="['jobs']">Jobs</button>
+         <button type="button" class="btn btn-primary mb-1" routerLinkActive="active" [routerLink]="['people']">People</button>
+         <button type="button" class="btn btn-primary mb-1" routerLinkActive="active" [routerLink]="['about']">About</button>
+        </div>
+     </aside>
+     <div class="render">
+         <router-outlet></router-outlet>
+     </div>
+</div>
