@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Comando para correr el proyecto
 
-Run `ng serve -o` 
+Run `ng serve -o` fressdd
 
 ## Comandos utilizados en la consola
 
